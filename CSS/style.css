@@ -1,0 +1,110 @@
+* { 
+   color: white;
+}
+html,
+body{
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   overflow: hidden;
+}
+.hidden {
+   display: none;
+}
+
+.buttonStyle{
+   margin-left: 10px;
+}
+
+.listDone{
+   text-decoration: line-through red;
+}
+
+img {
+   min-width: 100%;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+   overflow: hidden;
+   position: fixed;
+   z-index: -1;
+}
+
+#div_container{
+   margin: 12px;
+   padding: 12px;
+   display: flex;
+   height: 95%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#clock {
+   align-self: flex-end;
+   font-size: 30px;
+}
+#div_weather {
+   align-self: flex-end;
+   font-size: 12px;
+}
+
+#div_forms {
+   max-width: 50%;
+   max-height: max-content;
+   flex-grow: 1;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   overflow: auto;
+}
+#div_forms * {
+   color: black;
+}
+#div_login {
+   display: flex;
+   min-height: 100px;
+   
+   align-self: center;
+}
+#div_todo{
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   align-self: center;
+   overflow: auto;
+}
+.form_todo{
+   align-self: center;
+}
+
+#div_login .form_login{
+   padding-top: 30px;
+}
+#greeting {
+   color: white;
+   padding-top: 10px;
+   font-size: 3em;
+}
+#list_todo {
+   width: inherit;
+   margin-left: auto;
+   margin-right: auto;
+   word-break: break-all;
+   text-align: center;
+   list-style: none;
+}
+#list_todo li:not(button) {
+   display: inline-flexbox;
+}
+#list_todo *:not(button){
+   color: white;
+}
+#quotes{
+   font-style: italic;
+   font-weight: normal;
+   font-size: 0.8em;
+}

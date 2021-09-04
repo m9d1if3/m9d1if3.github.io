@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="CSS\style.css">
+   <title>App making Practice</title>
+</head>
+
+<body>
+   <div id="div_container">
+      <h1 id="clock"> 00:00 </h1>
+      <div id="div_weather">
+         <span id="city"></span>
+         <span id="weather"></span>
+         <span id="humidity"></span>
+      </div>
+
+      <div id="div_forms">
+         <div id="div_login">
+            <form class="form_login hidden">
+               <!-- 유효성 검사를 하기 위해서는 form(정확히는 submit)이 필요하다 -->
+               <input required type="text" placeholder="input your name here" maxlength="10" minlength="4">
+               <button> Log In </button>
+            </form>
+            <h2 class="hidden" id="greeting"></h2>
+         </div>
+
+         <div id="div_todo">
+            <form class="form_todo">
+               <input required type="text" placeholder="Write a content">
+            </form>
+            <ul id="list_todo"></ul>
+         </div>
+      </div>
+
+      <!-- <a href="https://nomadcoders.co">Go to your courses</a> -->
+
+      <h3 id="quotes"></h3>
+   </div>
+
+   <script src="JS\greetings.js"></script>
+   <script src="JS\clock.js"></script>
+   <script src="JS\quotes.js"></script>
+   <script src="JS\background.js"></script>
+   <script src="JS\todo.js"></script>
+   <script src="JS\weather.js"></script>
+</body>
+
+</html>
